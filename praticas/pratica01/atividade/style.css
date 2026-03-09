@@ -1,0 +1,166 @@
+/* Variáveis de Cores e Estilo */
+:root {
+    --brand-blue: #00688B;
+    --bg-light: #f4f9fb;
+    --text-dark: #003344;
+    --text-gray: #666;
+    --white: #ffffff;
+    --shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--white);
+    color: var(--text-dark);
+}
+
+/* Header */
+.main-header {
+    background-color: var(--brand-blue);
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-style: italic;
+}
+
+.header-icons .icon {
+    margin-left: 20px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+/* Hero Section */
+.hero-banner {
+    background: linear-gradient(160deg, #f0f8ff 20%, #c1e1ec 100%);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero-logo-wrapper {
+    margin-bottom: 20px;
+}
+
+.floating-logo {
+    max-width: 120px;
+    filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.2));
+}
+
+.hero-banner h1 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    color: var(--brand-blue);
+}
+
+.btn-cta {
+    display: inline-block;
+    padding: 12px 35px;
+    border: 2px solid var(--brand-blue);
+    border-radius: 30px;
+    color: var(--brand-blue);
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-cta:hover {
+    background-color: var(--brand-blue);
+    color: white;
+}
+
+/* Grid de Produtos */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+/* Cards */
+.card {
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: transform 0.2s;
+    background: white;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow);
+}
+
+.badge {
+    background-color: var(--brand-blue);
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 8px;
+    text-align: left;
+}
+
+.card-image {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card-body {
+    padding: 15px;
+    border-top: 1px solid #f0f0f0;
+}
+
+.product-title {
+    font-size: 14px;
+    color: var(--text-gray);
+    margin-bottom: 12px;
+    line-height: 1.4;
+    height: 40px;
+}
+
+.product-price {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: var(--brand-blue);
+}
+
+/* Footer */
+.main-footer {
+    background-color: var(--brand-blue);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: 60px;
+}
+
+.social-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 1.2rem;
+}
+
+.social-links span {
+    cursor: pointer;
+}
