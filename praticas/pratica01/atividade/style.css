@@ -1,4 +1,4 @@
-/* RESET E VARIÁVEIS */
+
 * {
     margin: 0;
     padding: 0;
@@ -92,7 +92,7 @@ body {
 
 /* Carrinho com Número Acima */
 .cart-container {
-    position: relative; /* Base para o número flutuar */
+    position: relative; 
     display: inline-block;
 }
 
@@ -102,8 +102,8 @@ body {
 
 .cart-badge {
     position: absolute;
-    top: -8px;      /* Joga para cima */
-    right: -10px;   /* Joga para a direita */
+    top: -8px;      
+    right: -10px;   
     background-color: #ff4d4d;
     color: white;
     font-size: 0.7rem;
@@ -114,7 +114,7 @@ body {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    border: 2px solid #002b3d; /* Cria um contorno para não misturar com o fundo */
+    border: 2px solid #002b3d; 
     transition: 0.3s;
 }
 
@@ -145,7 +145,7 @@ body {
     font-weight: bold;
 }
 .hero-banner {
-    /* Troquei \ por / e adicionei o prefixo file:/// para o navegador entender */
+    
     background-image: url('imagens/background.png');
     background-size: cover;
     background-position: center;
@@ -153,16 +153,16 @@ body {
     width: 100%;
     height: 500px; 
     position: relative;
-    display: flex; /* Garante que o container interno funcione */
+    display: flex; 
     align-items: center;
     justify-content: center;
 }
 
 .hero-content {
     position: absolute;
-    bottom: 1px; /* Isso empurra o botão para 30px do final da imagem */
+    bottom: 1px; 
     left: 50%;
-    transform: translateX(-50%); /* Garante que ele continue centralizado */
+    transform: translateX(-50%); 
 }
 
 .btn-cta {
@@ -173,7 +173,7 @@ body {
     text-decoration: none;
     font-weight: bold;
     border: 2px solid #00668c;
-    white-space: nowrap; /* Impede o botão de quebrar em duas linhas */
+    white-space: nowrap; 
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
@@ -196,7 +196,7 @@ body {
     background: #fff;
     border: 1px solid #eee;
     border-radius: 12px;
-    overflow: hidden; /* Corta o zoom da imagem para não sair do card */
+    overflow: hidden; 
     transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
@@ -222,14 +222,14 @@ body {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
-    transition: transform 0.5s ease; /* Animação suave do zoom */
+    transition: transform 0.5s ease; 
 }
 
 .product-card:hover .product-image img {
-    transform: scale(1.15); /* Aumenta a imagem em 15% no hover */
+    transform: scale(1.15); 
 }  
 .product-card:hover .product-image img {
-    transform: scale(1.1); /* Zoom na Placa de Vídeo/Processador */
+    transform: scale(1.1); 
 }
 
 .promo-badge {
@@ -319,12 +319,12 @@ body {
 /* Container dos ícones */
 .social-links {
     display: flex;
-    gap: 20px; /* Mais espaço para a animação não amontoar */
+    gap: 20px; 
     align-items: center;
     margin-top: 15px;
 }
 
-/* O ícone em si */
+
 .social-img {
     width: 26px !important;
     height: 26px !important;
@@ -343,7 +343,7 @@ body {
 
 /* /* Efeito de clique  */
 .social-img:active {
-    transform: translateY(-4px) scale(0.9); /* Dá um leve "pulo" para baixo ao clicar */
+    transform: translateY(-4px) scale(0.9); 
 }
 
 .footer-bottom {
@@ -356,15 +356,15 @@ body {
 
 /* RESPONSIVIDADE */
 @media (max-width: 768px) {
-    .header-center { display: none; } /* Esconde a busca no celular para caber o resto */
+    .header-center { display: none; } 
     
     .hero-banner {
-        height: 300px; /* Banner menor no celular */
-        background-attachment: scroll; /* Melhora performance no mobile */
+        height: 300px; 
+        background-attachment: scroll; 
     }
 
     .product-grid {
-        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); /* 2 produtos por linha no celular */
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
         gap: 15px;
         padding: 20px 3%;
     }
